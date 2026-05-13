@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>j1e6 labs</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">j1e6</div>
+
+    <input id="search" type="text" placeholder="search..." />
+
+    <nav>
+      <button class="filter active" data-filter="all">all</button>
+      <button class="filter" data-filter="math">math</button>
+      <button class="filter" data-filter="physics">physics</button>
+    </nav>
+
+    <div class="meta">
+      <p>research dashboard</p>
+      <p id="clock"></p>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div class="header">
+      <h1>digi-archive/academic repo.</h1>
+      <p>notes, experiments, systems</p>
+    </div>
+
+    <section id="grid" class="grid">
+
+      <article class="card" data-tags="math physics">
+        <h2>Bifurcations Along the Imaginary Reynolds Axis</h2>
+        <p>Analytic Continuation of Hydrodynamic Stability</p>
+        <span>physics</span>
+      </article>
+
+      <article class="card" data-tags="math">
+        <h2>Linear Algebra Toolkit</h2>
+        <p>Basis transformations, eigen decomposition workflows.</p>
+        <span>math</span>
+      </article>
+
+      <article class="card" data-tags="physics">
+        <h2>Quantum Energy States</h2>
+        <p>Two-level system probability simulation at thermal equilibrium.</p>
+        <span>physics</span>
+      </article>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
